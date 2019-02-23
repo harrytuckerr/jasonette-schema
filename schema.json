@@ -88,18 +88,17 @@
             }
           }
         },
-       "required": [
-    "sections"
-  ],
+       
+    "sections": {
   "properties": {
     "sections": {
       "$id": "#/properties/sections",
       "type": "array",
-      "title": "The Sections Schema",
+      "title": "Sections",
       "items": {
         "$id": "#/properties/sections/items",
         "type": "object",
-        "title": "The Items Schema",
+        "title": "Items",
         "required": [
           "items"
         ],
@@ -107,7 +106,7 @@
           "items": {
             "$id": "#/properties/sections/items/properties/items",
             "type": "array",
-            "title": "The Items Schema",
+            "title": "Items",
             "items": {
               "$id": "#/properties/sections/items/properties/items/items",
               "type": "object",
@@ -120,7 +119,7 @@
                 "type": {
                   "$id": "#/properties/sections/items/properties/items/items/properties/type",
                   "type": "string",
-                  "title": "The Type Schema",
+                  "title": "Type",
                   "default": "",
                   "examples": [
                     "label"
@@ -130,7 +129,7 @@
                 "text": {
                   "$id": "#/properties/sections/items/properties/items/items/properties/text",
                   "type": "string",
-                  "title": "The Text Schema",
+                  "title": "Text",
                   "default": "",
                   "examples": [
                     "Label only item"
@@ -142,6 +141,7 @@
           }
         }
       }
+    }
     }
   },
         "layers" : {
