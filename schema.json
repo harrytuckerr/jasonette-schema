@@ -145,6 +145,96 @@
     }
   },
         "layers" : {
+        "properties": {
+      "$id": "#/properties/layers",
+      "type": "array",
+      "title": "The Layers Schema",
+      "items": {
+        "$id": "#/properties/layers/items",
+        "type": "object",
+        "title": "Layers",
+        "required": [
+          "type",
+          "text",
+          "style"
+        ],
+        "properties": {
+          "type": {
+            "$id": "#/properties/layers/items/properties/type",
+            "type": "string",
+            "title": "The Type Schema",
+            "default": "",
+            "examples": [
+              "label"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "text": {
+            "$id": "#/properties/layers/items/properties/text",
+            "type": "string",
+            "title": "The Text Schema",
+            "default": "",
+            "examples": [
+              "Floating label"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "style": {
+            "$id": "#/properties/layers/items/properties/style",
+            "type": "object",
+            "title": "The Style Schema",
+            "required": [
+              "top",
+              "left",
+              "width",
+              "padding"
+            ],
+            "properties": {
+              "top": {
+                "$id": "#/properties/layers/items/properties/style/properties/top",
+                "type": "string",
+                "title": "The Top Schema",
+                "default": "",
+                "examples": [
+                  "100"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "left": {
+                "$id": "#/properties/layers/items/properties/style/properties/left",
+                "type": "string",
+                "title": "The Left Schema",
+                "default": "",
+                "examples": [
+                  "50%-25"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "width": {
+                "$id": "#/properties/layers/items/properties/style/properties/width",
+                "type": "string",
+                "title": "The Width Schema",
+                "default": "",
+                "examples": [
+                  "50"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "padding": {
+                "$id": "#/properties/layers/items/properties/style/properties/padding",
+                "type": "string",
+                "title": "The Padding Schema",
+                "default": "",
+                "examples": [
+                  "10"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        }
+      }
+  }
 
         },
         "footer" : {
