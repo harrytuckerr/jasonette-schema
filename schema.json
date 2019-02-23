@@ -197,12 +197,12 @@
     },
     "builtinActionsEnum" : {
       "type" : "string",
-      "enum" : ["$render", "$reload", "$snapshot", "$href", "$close", "$back",
+      "enum" : ["$require", "$lambda", "$return.success", "$return.error", "$render", "$reload", "$snapshot", "$href", "$close", "$back", "$ok", "$scroll",
         "$network.request", "$network.upload", "$session.set", "$session.reset",
         "$set", "$get", "$cache.set", "$cache.reset", "$global.set", "$global.reset",
         "$util.banner", "$util.toast", "$util.alert", "$util.share", "$util.picker", "$util.datepicker", "$util.addressbook",
-        "$media.camera", "$media.picker", "media.player",
-        "$audio.play", "$audio.pause", "$audio.stop", "$audio.seek", "$audio.position", "$audio.duration", "audio.record",
+        "$media.camera", "$media.picker", "$media.play",
+        "$vision.scan", "$audio.play", "$audio.pause", "$audio.stop", "$audio.seek", "$audio.position", "$audio.duration", "$audio.record",
         "$geo.get", "$timer.start", "$timer.stop", "$convert.csv", "$convert.rss"
       ]
     },
