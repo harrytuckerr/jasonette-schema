@@ -88,15 +88,15 @@
             }
           }
         },
-        "sections" : [{
-          "type: "horizontal or vertical",
+        "sections" : {
+              "properties": {           
+          "type": "horizontal or vertical",
           "items": [{
-            "type": "string"
-            "option": "string
-          },
-            
-          ]
-        }],
+            "type": "string",
+            "option": "string"
+          }]
+        }
+      },
         "layers" : {
 
         },
