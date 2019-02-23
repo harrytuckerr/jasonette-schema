@@ -88,15 +88,62 @@
             }
           }
         },
-        "sections" : {
-              "properties": {           
-          "type": "horizontal or vertical",
-          "items": [{
-            "type": "string",
-            "option": "string"
-          }]
+       "required": [
+    "sections"
+  ],
+  "properties": {
+    "sections": {
+      "$id": "#/properties/sections",
+      "type": "array",
+      "title": "The Sections Schema",
+      "items": {
+        "$id": "#/properties/sections/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "items"
+        ],
+        "properties": {
+          "items": {
+            "$id": "#/properties/sections/items/properties/items",
+            "type": "array",
+            "title": "The Items Schema",
+            "items": {
+              "$id": "#/properties/sections/items/properties/items/items",
+              "type": "object",
+              "title": "The Items Schema",
+              "required": [
+                "type",
+                "text"
+              ],
+              "properties": {
+                "type": {
+                  "$id": "#/properties/sections/items/properties/items/items/properties/type",
+                  "type": "string",
+                  "title": "The Type Schema",
+                  "default": "",
+                  "examples": [
+                    "label"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "text": {
+                  "$id": "#/properties/sections/items/properties/items/items/properties/text",
+                  "type": "string",
+                  "title": "The Text Schema",
+                  "default": "",
+                  "examples": [
+                    "Label only item"
+                  ],
+                  "pattern": "^(.*)$"
+                }
+              }
+            }
+          }
         }
-      },
+      }
+    }
+  },
         "layers" : {
 
         },
